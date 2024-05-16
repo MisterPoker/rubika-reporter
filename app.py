@@ -64,4 +64,4 @@ try:
             print(f"{colorama.Fore.LIGHTBLACK_EX} Report {colorama.Fore.GREEN}OK {colorama.Fore.BLUE}[{colorama.Fore.LIGHTBLACK_EX}{n}{colorama.Fore.BLUE}]")
         except:pass
 except:
-    print(f"\n{colorama.Fore.RED}Something Went Wrong! Closing The Program ...")
+    print(f"\n{colorama.Fore.RED}Something Went Wrong! Closing The Program ...") 

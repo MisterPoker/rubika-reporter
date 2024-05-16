@@ -19,7 +19,7 @@ pip install pyrubi pyfiglet colorama
 
 
 ## Usage
-1. Run the app.py script:
+1. Run the app.py script: 
 
 ```bash
 python app.py

@@ -1,29 +1,38 @@
-import os,platform
+import os
+import platform
 
 def Cl():
-	if platform.uname()[0] == "Windows":os.system("cls")
-	else:os.system("clear")
-	
+    if platform.uname()[0] == "Windows":
+        os.system("cls")
+    else:
+        os.system("clear")
+    
 Cl()
 
 try:
-	
-    try:import pyrubi
-    except:os.system("pip install pyrubi")
-    try:import pyfiglet
-    except:os.system("pip install pyfiglet")
-    try:import colorama
-    except:os.system("pip install colorama")
+    try:
+        import pyrubi
+    except:
+        os.system("pip install pyrubi")
+    try:
+        import pyfiglet
+    except:
+        os.system("pip install pyfiglet")
+    try:
+        import colorama
+    except:
+        os.system("pip install colorama")
 
-    import pyrubi,pyfiglet,colorama,time
+    import pyrubi, pyfiglet, colorama, time
 
     bot = pyrubi.Client("P-D99999")
     font = pyfiglet.Figlet()
     n = 0
     Cl()
 
-    print(colorama.Fore.LIGHTBLACK_EX+font.renderText(" MISTER . POKER "))
-    print(colorama.Fore.CYAN+" Tel >>> @sina_next\n\n");time.sleep(1)
+    print(colorama.Fore.LIGHTBLACK_EX + font.renderText(" MISTER . POKER "))
+    print(colorama.Fore.CYAN + " Tel >>> @sina_next\n\n")
+    time.sleep(1)
 
     Ty = input(f" {colorama.Fore.LIGHTBLACK_EX}[{colorama.Fore.GREEN}1{colorama.Fore.LIGHTBLACK_EX}] {colorama.Fore.LIGHTCYAN_EX}Report Rubika User\n{colorama.Fore.LIGHTBLACK_EX} [{colorama.Fore.GREEN}2{colorama.Fore.LIGHTBLACK_EX}] {colorama.Fore.LIGHTCYAN_EX}Report Rubika Group\n{colorama.Fore.LIGHTBLACK_EX} [{colorama.Fore.GREEN}3{colorama.Fore.LIGHTBLACK_EX}] {colorama.Fore.LIGHTCYAN_EX}Report Rubika Channel\n\n {colorama.Fore.LIGHTMAGENTA_EX}Selection : ")
 
@@ -45,12 +54,12 @@ try:
     elif Ty == "1" or Ty == "۱" or Ty == "[1]":
         Get = bot.get_chat_info_by_username(Li)
         guid = Get['user']['user_guid']
-        Name = Get['user']['first_name'] + Get['user']['last_name']
+        Name = Get['user']['first_name'] + " " + Get['user']['last_name']
     else:
         Cl()
         print(f"\n {colorama.Fore.RED} Not available !\n")
         
-    Te = input(f" \n{colorama.Fore.YELLOW} Your description ( code filteri ) : ")
+    Te = input(f" \n{colorama.Fore.YELLOW} Your description (code filtering) : ")
 
     Cl()
 
@@ -59,9 +68,10 @@ try:
         
     while True:
         try:
-            bot.report_chat(guid,description=Te)
-            n+=1
+            bot.report_chat(guid, description=Te)
+            n += 1
             print(f"{colorama.Fore.LIGHTBLACK_EX} Report {colorama.Fore.GREEN}OK {colorama.Fore.BLUE}[{colorama.Fore.LIGHTBLACK_EX}{n}{colorama.Fore.BLUE}]")
-        except:pass
+        except:
+            pass
 except:
-    print(f"\n{colorama.Fore.RED}Something Went Wrong! Closing The Program ...")  
+    print(f"\n{colorama.Fore.RED}Something Went Wrong! Closing The Program ...")

@@ -17,8 +17,20 @@ pip install pyrubi pyfiglet colorama
 ```
 
 ## Usage
-Run the app.py script:
+1. Run the app.py script:
 
 ```bash
 python app.py
 ```
+2. Follow the prompts to select the type of Rubika entity you want to report (user, group, or channel), provide the link or ID, and enter your description.
+
+## Features
+
+- Supports reporting Rubika users, groups, and channels.
+- Provides a simple command-line interface.
+
+## Contributors
+- [Mister Poker](https://github.com/MisterPoker/)
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.

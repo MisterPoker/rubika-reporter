@@ -1,1 +1,5 @@
-schema.py
+# Ignore everything
+*
+
+# Except app.py
+!app.py

@@ -30,7 +30,7 @@ try:
     n = 0
     Cl()
 
-    print(colorama.Fore.LIGHTBLACK_EX + font.renderText(" MISTER . POKER "))
+    print(colorama.Fore.LIGHTBLACK_EX + font.renderText(" MANI "))
     print(colorama.Fore.CYAN + " Tel >>> @sina_next\n\n")
     time.sleep(1)
 

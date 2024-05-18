@@ -3,6 +3,5 @@
 
 # Except app.py
 !app.py
-!LICENSE
 !README.me
 !.gitignore

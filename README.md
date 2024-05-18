@@ -36,6 +36,3 @@ python app.py
 ## Contributors
 - [Mister Poker](https://github.com/MisterPoker/)
 
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/MisterPoker/rubika-reporter/blob/main/LICENSE) file for details.
